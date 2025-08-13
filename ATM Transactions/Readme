@@ -1,0 +1,79 @@
+# ATM Transaction Data Analysis Project
+
+## Overview
+
+This project analyzes ATM transaction data using Power BI, aiming to provide actionable insights into costs, revenue, transaction trends, and ATM uptime. The workflow spans from data import and cleaning to advanced calculations and dashboard visualization.
+
+## Project Steps
+
+1. **Data Import**
+   - The ATM transaction dataset was sourced as an Excel file and imported into Power BI.
+
+2. **Data Checking and Cleaning**
+   - Data types were validated and standardized.
+   - Handled missing values, removed duplicates, and dropped unnecessary columns.
+   - Ensured consistency across date, numeric, and category fields.
+
+3. **Data Transformation**
+   - Created new calculated fields:
+     - **Gross Profit Percentage**: Measures profitability relative to revenue.
+     - **Month-Year**: Combines month and year for time-based trend analysis.
+     - **Short Month**: Abbreviated month names for cleaner visuals.
+   - Aggregated transaction and revenue data monthly for trend and performance tracking.
+
+4. **Dashboard Preparation**
+
+   The Power BI dashboard consists of two main views: **Overview** and **Detail**.
+
+   ### Key Metrics (KPIs)
+   - **Total Cost**: 296M
+   - **Average Monthly Transactions**: 5.46K
+   - **Average Monthly Revenue**: 52.13K
+   - **Average Up Time**: 91.9%
+   - **Gross Profit Percentage**: 59.60%
+
+   ### Main Visuals
+
+   #### Overview Page (Image 1)
+   - **Cost Analysis (Donut Charts)**: Breakdown of cost categories such as CRA, ATM AMC, Site Maintenance, Spare Repairs, UPS AMC, and VSAT AMC.
+   - **ATM, MHA, and Monthly Revenue (Bar Chart)**: Revenue comparison across states (ATM Revenue, MHA Revenue, Total Monthly Revenue).
+   - **Revenue Summaries**: Highlighting MHA Revenue, Monthly Revenue, and ATM Revenue Total.
+   - **Average Financial vs Non-Financial Transactions by Month-Year (Clustered Column Chart)**: Comparison across recent months.
+   - **Monthly Revenue and Monthly Transactions by Month-Year (Line Chart)**: Trends of revenue and transactions over time.
+   - **Date and Cost Category Filters**: Interactive buttons for Aug, Dec, Mar, Nov and different cost types.
+
+   #### Detail Page (Image 2)
+   - **Range Analysis Tables**: 
+     - Margin range distribution (e.g., Above 30%, Below 0%) by ATM ID for the current month.
+     - Transaction range distribution (e.g., 100-125, 125-150, etc.) by ATM ID for the previous month.
+   - **Performance Table**:
+     - ATM-wise breakdown including Revenue Performance, Avg Monthly Revenue, Avg Total/Monthly Transactions, Gross Profit %, and Avg Up Time.
+     - Visual bar indicators for quick comparison.
+   - **KPI Bar**: Consistent display of primary metrics for context.
+
+## Key Insights
+
+- Assam and Punjab lead in ATM revenue and transaction volumes, driving network profitability.
+- High average uptime (91.9%) and gross profit percentage (59.6%) reflect efficient operations.
+- Most ATMs operate at healthy profit margins, but some machines remain underutilized.
+- Cost breakdown highlights CRA and AMC as major expenditure areas, guiding cost-control efforts.
+
+## How to Use the Dashboard
+
+- **Navigate** between Overview and Detail views using the top navigation buttons.
+- **Explore** cost breakdowns, revenue trends, and performance at state or ATM level.
+- **Use filters and slicers** to focus on specific periods or cost categories.
+- **Review KPIs** for quick assessment of cost efficiency and profitability.
+
+## Tools Used
+
+- **Power BI**: For data modeling, DAX calculations, and dashboard creation.
+- **Microsoft Excel**: As the primary data source.
+
+## Conclusion
+
+This project demonstrates a full pipeline of extracting, cleaning, transforming, and visualizing ATM transaction data, resulting in an interactive dashboard for operational and strategic analysis.
+
+---
+
+*For access to the Power BI file or additional questions, please contact the project owner.*
